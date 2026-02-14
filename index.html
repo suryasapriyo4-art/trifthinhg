@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEYTECH - Premium Archive Store</title>
+    <title id="page-title">Loopwear - Premium Archive Store</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -15,7 +15,7 @@
     <div class="container">
         <!-- NAVIGASI -->
         <nav>
-            <div class="logo">Leytech</div>
+            <div class="logo" id="display-biz-name">Loopwear</div>
             <div class="nav-links">
                 <a href="#" onclick="showPage('buyer-page')">Archive</a>
                 <a href="#" onclick="showPage('login-page')" id="admin-link">Owner Access</a>
@@ -28,7 +28,7 @@
         <!-- PAGE: BUYER -->
         <main id="buyer-page" class="page active fade-in">
             <section class="hero">
-                <h1>ARCHIVE<span class="reg-mark">®</span><br>SMARTER.</h1>
+                <h1 id="display-hero-text">ARCHIVE<span class="reg-mark">®</span><br>SMARTER.</h1>
                 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
                     <p style="max-width: 400px; color: var(--text-muted); font-size: 1.1rem;">
                         A curated selection of archival pieces from global brands. Authentic, rare, and
@@ -55,21 +55,38 @@
 
         <!-- PAGE: LOGIN -->
         <section id="login-page" class="page fade-in" style="display:none;">
-            <div class="login-card" style="margin-top: 10vh;">
-                <h1 style="font-size: 4rem; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 2rem;">
-                    Authorized<br>Access.</h1>
-                <div id="login-error"
-                    style="display:none; color: var(--accent); margin-bottom: 2rem; font-weight: 700;">ACCESS DENIED.
-                    INCORRECT SYSTEM PARAMETERS.</div>
-                <div class="form-group">
-                    <label>IdentificationID</label>
-                    <input type="text" id="username" placeholder="admin">
+            <div class="login-wrapper">
+                <div class="login-container">
+                    <div class="login-decor login-decor-tl"></div>
+                    <div class="login-decor login-decor-tr"></div>
+                    <div class="login-decor login-decor-bl"></div>
+                    <div class="login-decor login-decor-br"></div>
+
+                    <div class="security-tag">ESTABLISHED SESSION: 2026.V4</div>
+
+                    <h1 class="login-title">AUTHORIZED<br>ACCESS ONLY.</h1>
+
+                    <div id="login-error" class="login-alert">
+                        <div class="alert-icon">!</div>
+                        <div>ACCESS DENIED. INCORRECT SYSTEM PARAMETERS.</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Owner.ID</label>
+                        <input type="text" id="username" placeholder="IDENTIFICATION REQUIRED">
+                    </div>
+                    <div class="form-group">
+                        <label>Access.Key</label>
+                        <input type="password" id="password" placeholder="••••••••">
+                    </div>
+
+                    <button onclick="handleLogin()" class="btn btn-primary login-btn">Establish Command Link</button>
+
+                    <div class="login-footer">
+                        <a href="#" onclick="showPage('buyer-page')" class="back-link">← RETURN TO SYSTEM ARCHIVE</a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>AccessKey</label>
-                    <input type="password" id="password" placeholder="••••••••">
-                </div>
-                <button onclick="handleLogin()" class="btn btn-primary" style="width: 100%;">Initiate Login</button>
+                <div class="security-scanner"></div>
             </div>
         </section>
 
@@ -105,6 +122,7 @@
                 </div>
                 <div onclick="showAdminSection('view-orders', this)" class="admin-tab">Transmission Logs</div>
                 <div onclick="showAdminSection('add-new', this)" class="admin-tab">Register New Unit</div>
+                <div onclick="showAdminSection('system-config', this)" class="admin-tab">System Configuration</div>
             </div>
 
             <section id="manage-products" class="admin-section">
@@ -164,12 +182,55 @@
                                 <th>Subject</th>
                                 <th>Package</th>
                                 <th>Size</th>
-                                <th>Status</th>
+                                <th>Channel</th>
                                 <th>Timestamp</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody id="order-list"></tbody>
                     </table>
+                </div>
+            </section>
+
+            <section id="system-config" class="admin-section" style="display:none;">
+                <div style="background: #0a0a0a; border: 1px solid var(--glass-border); padding: 3rem;">
+                    <h3 style="text-transform: uppercase; margin-bottom: 2rem;">Business Parameters</h3>
+
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-bottom: 3rem;">
+                        <div class="form-group">
+                            <label>Business Name</label>
+                            <input type="text" id="config-biz-name" placeholder="Loopwear">
+                        </div>
+                        <div class="form-group">
+                            <label>Primary Slogan</label>
+                            <input type="text" id="config-biz-slogan" placeholder="ARCHIVE® SMARTER.">
+                        </div>
+                    </div>
+
+                    <h4 style="text-transform: uppercase; margin-bottom: 1rem; color: var(--primary);">Payment Gateway
+                        Matrix</h4>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+                        <div>
+                            <p style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 1rem;">E-WALLET
+                                ACCOUNTS</p>
+                            <div class="form-group"><label>DANA</label><input type="text" id="pay-dana"></div>
+                            <div class="form-group"><label>OVO</label><input type="text" id="pay-ovo"></div>
+                            <div class="form-group"><label>GOPAY</label><input type="text" id="pay-gopay"></div>
+                            <div class="form-group"><label>SHOPEE PAY</label><input type="text" id="pay-shopeepay">
+                            </div>
+                        </div>
+                        <div>
+                            <p style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 1rem;">BANK ACCOUNTS
+                            </p>
+                            <div class="form-group"><label>BCA</label><input type="text" id="pay-bca"></div>
+                            <div class="form-group"><label>MANDIRI</label><input type="text" id="pay-mandiri"></div>
+                            <div class="form-group"><label>BNI</label><input type="text" id="pay-bni"></div>
+                            <div class="form-group"><label>BRI</label><input type="text" id="pay-bri"></div>
+                        </div>
+                    </div>
+
+                    <button onclick="saveSystemConfig()" class="btn btn-primary"
+                        style="width: 100%; margin-top: 2rem;">Update System Config</button>
                 </div>
             </section>
         </main>
@@ -202,12 +263,33 @@
                 <div class="payment-grid">
                     <div class="payment-option" onclick="selectPayment('E-Wallet', this)">
                         <strong>E-Wallet</strong>
+                        <div id="ewallet-options" class="sub-payment-grid">
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('Gopay', this)">Gopay</div>
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('OVO', this)">OVO</div>
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('Dana', this)">Dana</div>
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('Shopee Pay', this)">Shopee Pay</div>
+                        </div>
                     </div>
                     <div class="payment-option" onclick="selectPayment('Bank Transfer', this)">
                         <strong>Node Transfer</strong>
+                        <div id="bank-options" class="sub-payment-grid">
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('BCA', this)">BCA</div>
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('Mandiri', this)">Mandiri</div>
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('BNI', this)">BNI</div>
+                            <div class="sub-payment-option"
+                                onclick="event.stopPropagation(); selectSubPayment('BRI', this)">BRI</div>
+                        </div>
                     </div>
                 </div>
                 <input type="hidden" id="selectedPayment">
+                <div id="payment-info" class="payment-info-box"></div>
             </div>
 
             <div style="display: flex; gap: 1rem; margin-top: 4rem;">

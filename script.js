@@ -2,33 +2,33 @@
 const DEFAULT_PRODUCTS = [
     // SHOES
     { id: 1, name: "Jordan 1 Retro High Travis Scott", price: 15500000, category: "Shoes", image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" },
-    { id: 2, name: "Nike Dunk Low Panda", price: 2100000, category: "Shoes", image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" },
-    { id: 3, name: "Adidas Yeezy Boost 350 V2", price: 4500000, category: "Shoes", image: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=800&q=80" },
-    { id: 4, name: "Nike Air Force 1 '07", price: 1600000, category: "Shoes", image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80" },
-    { id: 11, name: "Nike Air Max 97 Silver Bullet", price: 2800000, category: "Shoes", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" },
-    { id: 12, name: "Adidas Samba OG White Black", price: 1900000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
-    { id: 101, name: "Adidas Samba OG Black White", price: 1900000, category: "Shoes", image: "https://images.unsplash.com/photo-1589188055153-2393bb713022?auto=format&fit=crop&w=800&q=80" },
-    { id: 102, name: "Adidas Samba OG Bali Island", price: 2800000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 103, name: "Adidas Samba OG Liverpool FC", price: 2500000, category: "Shoes", image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" },
-    { id: 104, name: "Adidas Samba Wales Bonner Silver", price: 7500000, category: "Shoes", image: "https://images.unsplash.com/photo-1600185365483-1b9268a9efe5?auto=format&fit=crop&w=800&q=80" },
-    { id: 105, name: "Adidas Samba Wales Bonner Leopard", price: 8200000, category: "Shoes", image: "https://images.unsplash.com/photo-1595950621276-bb9c2201ad21?auto=format&fit=crop&w=800&q=80" },
-    { id: 106, name: "Adidas Samba OG Tobacco Gruen", price: 2100000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
-    { id: 28, name: "Adidas Handball Spezial Navy", price: 1850000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 107, name: "Adidas Handball Spezial Aluminium", price: 1950000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 108, name: "Adidas Handball Spezial Scarlet", price: 1850000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 109, name: "Adidas Blackburn SPZL Red", price: 3500000, category: "Shoes", image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" },
-    { id: 110, name: "Adidas Padiham SPZL Brown", price: 2400000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
-    { id: 111, name: "Adidas Munchen SPZL Navy", price: 2200000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 112, name: "Adidas Manchester 83 SPZL", price: 4200000, category: "Shoes", image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" },
-    { id: 113, name: "Adidas LG2 SPZL Liam Gallagher", price: 5500000, category: "Shoes", image: "https://images.unsplash.com/photo-1589188055153-2393bb713022?auto=format&fit=crop&w=800&q=80" },
-    { id: 114, name: "Adidas London City Series", price: 2800000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 115, name: "Adidas Stockholm City Series", price: 2800000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
+    { id: 2, name: "Nike Dunk Low Panda", price: 2100000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770962765257.png" },
+    { id: 3, name: "Adidas Yeezy Boost 350 V2", price: 4500000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770964242917.png" },
+    { id: 4, name: "Nike Air Force 1 '07", price: 1600000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770962831083.png" },
+    { id: 11, name: "Nike Air Max 97 Silver Bullet", price: 2800000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770964192061.jpg" },
+    { id: 12, name: "Adidas Samba OG White Black", price: 1900000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770964340697.png" },
+    { id: 101, name: "Adidas Samba OG Black White", price: 1900000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770964786295.png" },
+    { id: 102, name: "Adidas Bali Island", price: 2800000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770964948186.png" },
+    { id: 103, name: "Adidas Liverpool FC", price: 2500000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965268175.png" },
+    { id: 104, name: "Adidas Wales Bonner Silver", price: 7500000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965358230.png" },
+    { id: 105, name: "Adidas Wales Bonner Leopard", price: 8200000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965481374.png" },
+    { id: 106, name: "Adidas Tobacco Gruen", price: 2100000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965430568.png" },
+    { id: 28, name: "Adidas Handball Spezial Navy", price: 1850000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965727387.png" },
+    { id: 107, name: "Adidas Handball Spezial Aluminium", price: 1950000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965777617.png" },
+    { id: 108, name: "Adidas Handball Spezial Scarlet", price: 1850000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965837375.png" },
+    { id: 109, name: "Adidas Blackburn SPZL Red", price: 3500000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770965952607.png" },
+    { id: 110, name: "Adidas Padiham Brown", price: 2400000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770966057085.png" },
+    { id: 111, name: "Adidas Munchen Navy", price: 2200000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770966276839.png" },
+    { id: 112, name: "Adidas Manchester 89", price: 4200000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770966640116.png" },
+    { id: 113, name: "Adidas LG2 Liam Gallagher", price: 5500000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770967187993.png" },
+    { id: 114, name: "Adidas London Slime", price: 2800000, category: "Shoes", image: "C:/Users/ASUS/.gemini/antigravity/brain/177feb75-197f-447c-99c5-941c28eceec6/media__1770967290001.jpg" },
+    { id: 115, name: "Adidas Stockholm", price: 2800000, category: "Shoes", image: "images/stockholm_blue_yellow.png" },
     { id: 116, name: "Adidas Campus 00s Grey", price: 1850000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
     { id: 117, name: "Adidas SL 72 RS Blue", price: 1550000, category: "Shoes", image: "https://images.unsplash.com/photo-1539185441755-769473a23a50?auto=format&fit=crop&w=800&q=80" },
     { id: 118, name: "Adidas Hamburg Navy Gum", price: 1650000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
     { id: 119, name: "Adidas Paris City Series", price: 2900000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
     { id: 120, name: "Adidas Berlin City Series", price: 2900000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
-    { id: 121, name: "Adidas Dublin City Series", price: 3200000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
+    { id: 121, name: "Adidas Dublin City Series", price: 3200000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
     { id: 122, name: "Adidas Wien City Series", price: 2800000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
     { id: 123, name: "Adidas Jamaica Island Series", price: 2700000, category: "Shoes", image: "https://images.unsplash.com/photo-1605733162220-410a5666ca0b?auto=format&fit=crop&w=800&q=80" },
     { id: 124, name: "Adidas Samoa Island Series", price: 2100000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
@@ -42,12 +42,21 @@ const DEFAULT_PRODUCTS = [
     { id: 132, name: "Adidas Garwen SPZL Brown", price: 2800000, category: "Shoes", image: "https://images.unsplash.com/photo-1626379616459-b2ece1d93636?auto=format&fit=crop&w=800&q=80" },
     { id: 133, name: "Adidas Wales Bonner Red Samba", price: 7800000, category: "Shoes", image: "https://images.unsplash.com/photo-1595950621276-bb9c2201ad21?auto=format&fit=crop&w=800&q=80" },
     { id: 134, name: "Adidas Samba Vegan White", price: 1850000, category: "Shoes", image: "https://images.unsplash.com/photo-1589188055153-2393bb713022?auto=format&fit=crop&w=800&q=80" },
+    { id: 13, name: "Puma Suede Classic XI", price: 1100000, category: "Shoes", image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" },
+    { id: 14, name: "Puma RS-X Reinvention", price: 1750000, category: "Shoes", image: "https://images.unsplash.com/photo-1597043530274-06798e99990b?auto=format&fit=crop&w=800&q=80" },
+    { id: 23, name: "Puma Cali Dream White", price: 1350000, category: "Shoes", image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" },
+    { id: 24, name: "Puma Future Rider Play On", price: 1450000, category: "Shoes", image: "https://images.unsplash.com/photo-1539185441755-769473a23a50?auto=format&fit=crop&w=800&q=80" },
+    { id: 26, name: "Puma Mayze Thrift Platform", price: 1650000, category: "Shoes", image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" },
+    { id: 32, name: "Puma Suede Classic Red White", price: 1100000, category: "Shoes", image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80" },
+    { id: 33, name: "Puma Clyde All-Pro Coast", price: 1850000, category: "Shoes", image: "https://images.unsplash.com/photo-1539185441755-769473a23a50?auto=format&fit=crop&w=800&q=80" },
+    { id: 34, name: "Puma CA Pro Heritage", price: 1250000, category: "Shoes", image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" },
+    { id: 35, name: "Puma Slipstream Mid Retro", price: 1550000, category: "Shoes", image: "https://images.unsplash.com/photo-1600185365483-1b9268a9efe5?auto=format&fit=crop&w=800&q=80" },
+    { id: 36, name: "Puma Roma Basic Black White", price: 950000, category: "Shoes", image: "https://images.unsplash.com/photo-1595950621276-bb9c2201ad21?auto=format&fit=crop&w=800&q=80" },
 
     // HOODIES
     { id: 5, name: "Stussy 8 Ball Hoodie Black", price: 2200000, category: "Hoodie", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80" },
     { id: 6, name: "Fear Of God Essentials Hoodie", price: 1850000, category: "Hoodie", image: "https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=800&q=80" },
     { id: 15, name: "Supreme Box Logo Hoodie Navy", price: 12500000, category: "Hoodie", image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" },
-    { id: 16, name: "Nike Sportswear Club Fleece", price: 750000, category: "Hoodie", image: "https://images.unsplash.com/photo-1556316301-356a14357451?auto=format&fit=crop&w=800&q=80" },
     { id: 17, name: "Off-White Caravaggio Hoodie", price: 7800000, category: "Hoodie", image: "https://images.unsplash.com/photo-1632766863604-5f5f3e46c96a?auto=format&fit=crop&w=800&q=80" },
     { id: 7, name: "Carhartt WIP Chase Hoodie", price: 1400000, category: "Hoodie", image: "https://images.unsplash.com/photo-1510271322841-55ec7468667a?auto=format&fit=crop&w=800&q=80" },
 
@@ -60,21 +69,59 @@ const DEFAULT_PRODUCTS = [
     { id: 10, name: "Dickies Eisenhower Jacket", price: 950000, category: "Jacket", image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80" }
 ];
 
-// Initialize Storage
-// Initialize Storage with Auto-Sync for new defaults
+// --- SYSTEM CONFIGURATION DEFAULTS ---
+const DEFAULT_CONFIG = {
+    bizName: "Loopwear",
+    heroText: "ARCHIVE<span class=\"reg-mark\">®</span><br>SMARTER.",
+    payments: {
+        'DANA': '083821715069',
+        'OVO': '082120455531',
+        'GOPAY': '0881023071064',
+        'SHOPEE PAY': '081255647782',
+        'BNI': '098416515',
+        'BCA': '154879656',
+        'BRI': '488111524',
+        'MANDIRI': '884446549'
+    }
+};
+
 function initStorage() {
     let currentProducts = JSON.parse(localStorage.getItem('products')) || [];
 
-    // Check for missing default products by ID and add them
     DEFAULT_PRODUCTS.forEach(defP => {
-        const exists = currentProducts.some(p => p.id === defP.id);
-        if (!exists) {
+        const index = currentProducts.findIndex(p => p.id === defP.id);
+        if (index === -1) {
             currentProducts.push(defP);
+        } else {
+            currentProducts[index].image = defP.image;
+            currentProducts[index].name = defP.name;
+            currentProducts[index].price = defP.price;
         }
+    });
+
+    const defaultIds = DEFAULT_PRODUCTS.map(p => p.id);
+    currentProducts = currentProducts.filter(p => {
+        if (p.id < 1000000000000) {
+            return defaultIds.includes(p.id);
+        }
+        return true;
     });
 
     localStorage.setItem('products', JSON.stringify(currentProducts));
     if (!localStorage.getItem('orders')) localStorage.setItem('orders', JSON.stringify([]));
+
+    // Init Config
+    if (!localStorage.getItem('system_config')) {
+        localStorage.setItem('system_config', JSON.stringify(DEFAULT_CONFIG));
+    }
+    applySystemConfig();
+}
+
+function applySystemConfig() {
+    const config = JSON.parse(localStorage.getItem('system_config'));
+    document.getElementById('display-biz-name').innerText = config.bizName;
+    document.getElementById('display-hero-text').innerHTML = config.heroText;
+    document.getElementById('page-title').innerText = config.bizName + " - Premium Archive Store";
 }
 initStorage();
 
@@ -104,17 +151,30 @@ function showAdminSection(sectionId, el) {
 
     document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
     if (el) el.classList.add('active');
+
+    if (sectionId === 'system-config') loadSystemConfigInputs();
 }
 
 function updateStats() {
     const products = JSON.parse(localStorage.getItem('products')) || [];
     const orders = JSON.parse(localStorage.getItem('orders')) || [];
 
-    const totalRevenue = products.reduce((acc, p) => acc + p.price, 0);
+    // Calculate total revenue from orders actually made
+    // We'll calculate it from the price of the products in the orders
+    const totalRevenue = orders.reduce((acc, order) => {
+        const prod = products.find(p => p.name === order.product);
+        return acc + (prod ? prod.price : 0);
+    }, 0);
+
+    const formattedRevenue = totalRevenue >= 1000000000
+        ? (totalRevenue / 1000000000).toFixed(1) + ' Miliar'
+        : totalRevenue >= 1000000
+            ? (totalRevenue / 1000000).toFixed(1) + ' Juta'
+            : 'IDR ' + totalRevenue.toLocaleString('id-ID');
 
     document.getElementById('stat-total-products').innerText = products.length;
     document.getElementById('stat-total-orders').innerText = orders.length;
-    document.getElementById('stat-total-revenue').innerText = 'IDR ' + totalRevenue.toLocaleString('id-ID');
+    document.getElementById('stat-total-revenue').innerText = formattedRevenue;
 }
 
 // --- BUYER APP ---
@@ -187,10 +247,48 @@ function selectSize(val, el) {
     document.getElementById('selectedSize').value = val;
 }
 
+// Payment logic refined (Numbers now dynamic from system_config)
+
 function selectPayment(val, el) {
     document.querySelectorAll('.payment-option').forEach(b => b.classList.remove('active'));
     el.classList.add('active');
-    document.getElementById('selectedPayment').value = val;
+
+    const ewalletSubGrid = document.getElementById('ewallet-options');
+    const bankSubGrid = document.getElementById('bank-options');
+    const infoBox = document.getElementById('payment-info');
+
+    // Reset grids & info box
+    ewalletSubGrid.style.display = 'none';
+    bankSubGrid.style.display = 'none';
+    infoBox.style.display = 'none';
+    document.getElementById('selectedPayment').value = '';
+
+    if (val === 'E-Wallet') {
+        ewalletSubGrid.style.display = 'grid';
+    } else if (val === 'Bank Transfer') {
+        bankSubGrid.style.display = 'grid';
+    }
+}
+
+function selectSubPayment(val, el) {
+    document.querySelectorAll('.sub-payment-option').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+
+    const isEwallet = el.closest('#ewallet-options');
+    const type = isEwallet ? 'E-Wallet' : 'Bank';
+    const finalMethod = type + ' (' + val + ')';
+    document.getElementById('selectedPayment').value = finalMethod;
+
+    const infoBox = document.getElementById('payment-info');
+    const config = JSON.parse(localStorage.getItem('system_config'));
+    const accountNum = config.payments[val.toUpperCase()];
+
+    if (accountNum) {
+        infoBox.innerHTML = `DESTINATION: ${accountNum}<br><small>(Transfer to this number to proceed)</small>`;
+        infoBox.style.display = 'block';
+    } else {
+        infoBox.style.display = 'none';
+    }
 }
 
 function closeCheckout() {
@@ -261,17 +359,32 @@ function renderInventory() {
 }
 
 function renderOrders() {
-    const orders = JSON.parse(localStorage.getItem('orders'));
-    document.getElementById('order-list').innerHTML = orders.map(o => `
+    const orders = JSON.parse(localStorage.getItem('orders')) || [];
+    document.getElementById('order-list').innerHTML = orders.length ? orders.map(o => `
         <tr>
             <td style="font-family: monospace; color: var(--primary);">${o.id}</td>
             <td style="font-weight:700;">${o.customer}</td>
             <td>${o.product}</td>
             <td><span class="status-badge" style="background:#333; color:white; border-color:#555;">${o.size}</span></td>
-            <td><span class="status-badge">Transmitted</span></td>
+            <td>
+                <span class="status-badge">${o.channel}</span>
+            </td>
             <td style="font-size:0.7rem; color:var(--text-muted);">${o.time}</td>
+            <td>
+                <button onclick="deleteOrder('${o.id}')" class="btn" style="padding: 0.2rem 0.5rem; font-size: 0.6rem; border-color: #ff220055; color: #ff220055;">Delete</button>
+            </td>
         </tr>
-    `).join('');
+    `).join('') : '<tr><td colspan="7" style="text-align:center; padding: 2rem; color: var(--text-muted);">No transmissions recorded.</td></tr>';
+}
+
+function deleteOrder(orderId) {
+    if (confirm("DELETE TRANSACTION LOG? This action cannot be undone.")) {
+        let orders = JSON.parse(localStorage.getItem('orders')) || [];
+        orders = orders.filter(o => o.id !== orderId);
+        localStorage.setItem('orders', JSON.stringify(orders));
+        updateStats();
+        renderOrders();
+    }
 }
 
 function addProduct() {
@@ -300,6 +413,43 @@ function deleteProduct(id) {
         updateStats();
         renderInventory();
     }
+}
+
+function loadSystemConfigInputs() {
+    const config = JSON.parse(localStorage.getItem('system_config'));
+    document.getElementById('config-biz-name').value = config.bizName;
+    document.getElementById('config-biz-slogan').value = config.heroText;
+
+    document.getElementById('pay-dana').value = config.payments['DANA'] || '';
+    document.getElementById('pay-ovo').value = config.payments['OVO'] || '';
+    document.getElementById('pay-gopay').value = config.payments['GOPAY'] || '';
+    document.getElementById('pay-shopeepay').value = config.payments['SHOPEE PAY'] || '';
+
+    document.getElementById('pay-bca').value = config.payments['BCA'] || '';
+    document.getElementById('pay-mandiri').value = config.payments['MANDIRI'] || '';
+    document.getElementById('pay-bni').value = config.payments['BNI'] || '';
+    document.getElementById('pay-bri').value = config.payments['BRI'] || '';
+}
+
+function saveSystemConfig() {
+    const config = {
+        bizName: document.getElementById('config-biz-name').value,
+        heroText: document.getElementById('config-biz-slogan').value,
+        payments: {
+            'DANA': document.getElementById('pay-dana').value,
+            'OVO': document.getElementById('pay-ovo').value,
+            'GOPAY': document.getElementById('pay-gopay').value,
+            'SHOPEE PAY': document.getElementById('pay-shopeepay').value,
+            'BCA': document.getElementById('pay-bca').value,
+            'MANDIRI': document.getElementById('pay-mandiri').value,
+            'BNI': document.getElementById('pay-bni').value,
+            'BRI': document.getElementById('pay-bri').value
+        }
+    };
+
+    localStorage.setItem('system_config', JSON.stringify(config));
+    applySystemConfig();
+    alert("SYSTEM PARAMETERS UPDATED SUCCESSFULLY.");
 }
 
 // Initial Boot
