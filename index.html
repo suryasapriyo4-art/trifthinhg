@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEYTECH - Premium Archive Store</title>
+    <meta name="description"
+        content="LEYTECH — A curated selection of archival pieces from global brands. Authentic, rare, and high-performance streetwear.">
     <title id="page-title">Loopwear - Premium Archive Store</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap"
@@ -11,6 +14,13 @@
 </head>
 
 <body>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
 
     <div class="container">
         <!-- NAVIGASI -->
@@ -20,13 +30,25 @@
                 <a href="#" onclick="showPage('buyer-page')">Archive</a>
                 <a href="#" onclick="showPage('login-page')" id="admin-link">Owner Access</a>
                 <a href="#" onclick="logout()" id="logout-link" style="display:none; color: var(--primary);">System
-                    Logout</a>
-            </div>
-            <div style="font-size: 0.8rem; letter-spacing: 1px;">08:44:02 LONDON</div>
+                    <div class="logo" onclick="showPage('buyer-page'); window.scrollTo({top:0,behavior:'smooth'})"
+                        style="cursor:pointer;">Leytech</div>
+                    <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <div class="nav-links" id="nav-links">
+                        <a href="#" onclick="showPage('buyer-page'); closeMobileMenu()">Archive</a>
+                        <a href="#" onclick="showPage('login-page'); closeMobileMenu()" id="admin-link">Owner Access</a>
+                        <a href="#" onclick="logout(); closeMobileMenu()" id="logout-link"
+                            style="display:none; color: var(--primary);">System
+                            Logout</a>
+                    </div>
+                    <div class="nav-clock" id="nav-clock">00:00:00</div>
         </nav>
 
         <!-- PAGE: BUYER -->
         <main id="buyer-page" class="page active fade-in">
+
+            <!-- ===== HERO SECTION ===== -->
             <section class="hero">
                 <h1 id="display-hero-text">ARCHIVE<span class="reg-mark">®</span><br>SMARTER.</h1>
                 <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
@@ -36,21 +58,242 @@
                     </p>
                     <div style="text-align: right;">
                         <span style="font-size: 2rem; font-weight: 200;">2026</span>
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">
+                                    <span class="line-1">ARCHIVE</span>
+                                    <span class="line-2">SMARTER.<span class="reg-mark">®</span></span>
+                                </h1>
+                                <div class="hero-bottom">
+                                    <div class="hero-nav">
+                                        <button class="hero-nav-btn" id="hero-prev">PREV</button>
+                                        <button class="hero-nav-btn" id="hero-next">NEXT</button>
+                                    </div>
+                                    <div class="hero-tagline">
+                                        <p>Supercharge Your <br>Wardrobe with <span
+                                                class="text-accent">instant</span><br>Curated Pieces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-image-wrapper">
+                                <div class="hero-image-glow"></div>
+                                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+                                    alt="Featured Fashion" class="hero-image" id="hero-featured-img">
+                            </div>
+                        </div>
+                        <div class="hero-meta">
+                            <div class="hero-stats-mini">
+                                <div class="mini-stat">
+                                    <span class="mini-stat-num">78<span class="mini-stat-suffix">+</span></span>
+                                    <span class="mini-stat-label">Today's<br>Collection</span>
+                                </div>
+                            </div>
+                            <div class="hero-year">
+                                <span>2026</span>
+                                <div class="year-line"></div>
+                            </div>
+                        </div>
+            </section>
+
+            <!-- ===== FEATURE CARDS ===== -->
+            <section class="features-section scroll-reveal">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="M21 21l-4.35-4.35" />
+                            </svg>
+                        </div>
+                        <h3>Curated<br>Collection.</h3>
+                        <p>Hand-picked archival pieces from premium global brands, each item verified for authenticity.
+                        </p>
+                        <a href="#product-catalog" class="feature-link">
+                            <span>SEE MORE</span>
+                            <span class="arrow-btn">→</span>
+                        </a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3>Authentic<br>Guarantee.</h3>
+                        <p>Every item comes with proof of authenticity. No fakes, no compromises — only originals.</p>
+                        <a href="#product-catalog" class="feature-link">
+                            <span>SEE MORE</span>
+                            <span class="arrow-btn">→</span>
+                        </a>
+                    </div>
+                    <div class="feature-card feature-card-highlight">
+                        <h3 class="highlight-title">Archive That Works for You.</h3>
+                        <p class="highlight-desc">Your 24/7 Source for Premium Streetwear at Fair Prices.</p>
+                        <div class="highlight-stat">
+                            <span class="highlight-label">THE FUTURE OF</span>
+                            <span class="highlight-number">21<span class="text-accent">K+</span></span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <!-- ===== PRODUCT SPOTLIGHT ===== -->
+            <section class="spotlight-section scroll-reveal">
+                <div class="spotlight-layout">
+                    <div class="spotlight-text">
+                        <h2>Unlock Your<br>Next Big<br>Find.</h2>
+                    </div>
+                    <div class="spotlight-image-area">
+                        <div class="spotlight-nav">
+                            <button class="spot-nav-btn">PREV</button>
+                            <button class="spot-nav-btn">NEXT</button>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"
+                            alt="Spotlight Product" class="spotlight-img">
+                    </div>
+                    <div class="spotlight-description">
+                        <p class="spot-quote">SAY GOODBYE TO MISSING OUT. WHETHER YOU'RE HUNTING FOR A GRAIL OR BUILDING
+                            A COLLECTION, OUR ARCHIVE HELPS YOU FIND PIECES THAT RESONATE.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== EDITORIAL STRIP ===== -->
+            <section class="editorial-strip scroll-reveal">
+                <p class="strip-text">ACCESS A WORLD OF PREMIUM PIECES THROUGH A SIMPLE STORE INTERFACE. AT LEYTECH,
+                    CITED AUTHENTICITY FOR YOUR TOUGHEST QUESTIONS IS A MATTER OF SECONDS.</p>
+            </section>
+
+            <!-- ===== STATS & TESTIMONIAL ===== -->
+            <section class="stats-testimonial-section scroll-reveal">
+                <div class="stats-test-grid">
+                    <div class="big-stat-card">
+                        <span class="big-stat-number">4.9</span>
+                        <span class="big-stat-label">CUSTOMER RATING</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The World's Best Archive, Just a Click Away.</p>
+                        <p class="testimonial-sub">Trusted by collectors and streetwear enthusiasts across Indonesia.
+                        </p>
+                    </div>
+            </section>
+
+            <!-- ===== CONVERSATIONAL AI / INFO ===== -->
+            <section class="info-banner scroll-reveal">
+                <div class="info-banner-content">
+                    <div class="info-label">WHERE IMAGINATION MEETS</div>
+                    <h2 class="info-title">Instant Execution.</h2>
+                    <div class="info-tags">
+                        <span>Complete Questions.</span>
+                        <span>Simple.</span>
+                        <span>Instant Answers.</span>
+                    </div>
+                    <p class="info-desc"><span class="text-accent">Conversational Intelligence</span> for Curious
+                        Minds.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===== CTA STRIP ===== -->
+            <section class="cta-strip-section scroll-reveal">
+                <div class="cta-item">
+                    <h3>Where Style Meets Authenticity.</h3>
+                    <span class="cta-num">001</span>
+                    <span class="arrow-btn cta-arrow">→</span>
+                </div>
+                <div class="cta-item">
+                    <h3>Where Imagination Meets Instant Execution.</h3>
+                    <span class="cta-num">002</span>
+                    <span class="arrow-btn cta-arrow">→</span>
+                </div>
+                <div class="cta-item">
+                    <h3>Browse. Select. Procure.</h3>
+                    <span class="cta-num">003</span>
+                    <span class="arrow-btn cta-arrow">→</span>
+                </div>
+            </section>
+
+            <!-- ===== CONVERSATIONAL AI / INFO ===== -->
+            <section class="info-banner scroll-reveal">
+                <div class="info-banner-content">
+                    <div class="info-label">WHERE IMAGINATION MEETS</div>
+                    <h2 class="info-title">Instant Execution.</h2>
+                    <div class="info-tags">
+                        <span>Complete Questions.</span>
+                        <span>Simple.</span>
+                        <span>Instant Answers.</span>
+                    </div>
+                    <p class="info-desc"><span class="text-accent">Conversational Intelligence</span> for Curious Minds.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===== PRODUCT CATALOG ===== -->
+            <section id="product-catalog" class="scroll-reveal">
                 <div class="product-section-title">
                     <h2>Selected Pieces</h2>
-                    <p
-                        style="color: var(--text-muted); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px;">
-                        Scroll to explore</p>
+                    <p class="section-subtitle">Scroll to explore</p>
+                </div>
+                <!-- SEARCH & SORT -->
+                <div class="catalog-controls">
+                    <div class="search-wrap">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                        <input type="text" id="search-input" class="search-input" placeholder="Search pieces..."
+                            oninput="handleSearch()">
+                    </div>
+                    <div class="sort-wrap">
+                        <select id="sort-select" class="sort-select" onchange="handleSort()">
+                            <option value="default">Default</option>
+                            <option value="price-asc">Price: Low → High</option>
+                            <option value="price-desc">Price: High → Low</option>
+                            <option value="name-asc">Name: A → Z</option>
+                        </select>
+                    </div>
                 </div>
                 <div id="product-list" class="product-grid">
                     <!-- Loaded via JS -->
                 </div>
             </section>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="site-footer scroll-reveal">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">L</div>
+                        <p class="footer-copy">© 2026 Leytech</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Feature</h4>
+                        <ul>
+                            <li><a href="#">Archive</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">Spotlight</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Authenticity</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Stay Updated</h4>
+                        <p class="newsletter-desc">Get notified about drops & restocks.</p>
+                        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                            <input type="email" placeholder="your@email.com" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
         </main>
 
         <!-- PAGE: LOGIN -->
@@ -102,7 +345,7 @@
             </div>
 
             <!-- Stats Overview -->
-            <div class="stats-grid">
+            <div class="admin-stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">Total Inventory Units</div>
                     <div id="stat-total-products" class="stat-value">0</div>
@@ -298,6 +541,82 @@
             </div>
         </div>
     </div>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div id="productDetailModal" class="modal-overlay" onclick="closeProductDetail(event)">
+        <div class="product-detail-modal">
+            <button class="detail-close" onclick="closeProductDetail()">✕</button>
+            <div class="detail-layout">
+                <div class="detail-image-section">
+                    <div class="detail-img-main">
+                        <img id="detail-main-img" src="" alt="Product" class="detail-main-image">
+                        <div class="img-zoom-lens" id="zoom-lens"></div>
+                    </div>
+                </div>
+                <div class="detail-info-section">
+                    <span class="detail-category" id="detail-category"></span>
+                    <h2 class="detail-name" id="detail-name"></h2>
+                    <span class="detail-price" id="detail-price"></span>
+                    <div class="detail-desc" id="detail-desc"></div>
+                    <div class="detail-sizes">
+                        <span class="detail-label">SIZE GUIDE</span>
+                        <div class="detail-size-grid" id="detail-sizes"></div>
+                    </div>
+                    <div class="detail-actions">
+                        <button class="btn-procure detail-buy" id="detail-buy-btn">PROCURE NOW →</button>
+                        <button class="btn-wishlist-detail" id="detail-wishlist-btn"
+                            onclick="toggleWishlistFromDetail()">
+                            <span class="wishlist-heart">♡</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- MOBILE BOTTOM NAV -->
+    <nav class="mobile-bottom-nav" id="mobile-bottom-nav">
+        <button class="bottom-nav-item active" onclick="mobileNavTo('home')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            </svg>
+            <span>Home</span>
+        </button>
+        <button class="bottom-nav-item" onclick="mobileNavTo('search')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <path d="M21 21l-4.35-4.35" />
+            </svg>
+            <span>Search</span>
+        </button>
+        <button class="bottom-nav-item" onclick="mobileNavTo('wishlist')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+            </svg>
+            <span>Wishlist</span>
+            <span class="wishlist-badge" id="wishlist-badge"></span>
+        </button>
+        <button class="bottom-nav-item" onclick="mobileNavTo('catalog')">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+            </svg>
+            <span>Catalog</span>
+        </button>
+    </nav>
 
     <script src="script.js"></script>
 </body>
